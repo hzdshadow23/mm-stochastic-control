@@ -1,9 +1,15 @@
 # Progress
 
-| # | Note | Status | Test |
-|---|------|--------|------|
-| 01–15 | see roadmap in CLAUDE.md | not started | — |
+| # | Note | Status | Tests |
+|---|------|--------|-------|
+| 01 | Probability & Itô calculus (incl. jumps, generator, Dynkin) | ✅ done | 5/5 pass |
+| 02 | Feynman–Kac (diffusion + jumps, MM spread preview) | ✅ done | 4/4 pass |
+| 03–06 | Part II — stochastic control (DPP, HJB, viscosity, Merton/LQ) | ⏳ next | — |
+| 07–10 | Part III — BSDE | not started | — |
+| 11–15 | Part IV — market making & execution | not started | — |
 
-**Next step:** note 01 (probability & Itô).
-**Last reported credit balance:** $100 (start).
-**Next review checkpoint:** end of Part I, or ≈ $50 remaining.
+Run all tests: `python -m pytest code/tests -q`
+
+**Checkpoint:** end of Part I — waiting for user review and balance check.
+**Next step:** note 03 (control problem & dynamic programming principle).
+**Last reported credit balance:** $100 (start; not yet updated).
