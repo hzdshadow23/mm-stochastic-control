@@ -1,0 +1,24 @@
+<style>
+body { font-family: "DejaVu Serif", "WenQuanYi Zen Hei", serif; font-size: 10.5pt; line-height: 1.45; max-width: none; margin: 0; padding: 0; }
+h1,h2,h3 { font-family: "DejaVu Sans", "WenQuanYi Zen Hei", sans-serif; }
+header#title-block-header { display: none; }
+table { border-collapse: collapse; margin: 0.6em 0; font-size: 0.92em; }
+th, td { border: 1px solid #999; padding: 3px 6px; vertical-align: top; }
+blockquote { border-left: 3px solid #4a7; margin-left: 0; padding-left: 0.8em; color: #234; }
+.katex-display { margin: 0.5em 0; }
+.katex-display > .katex { font-size: 1.1em; }
+.katex-display.too-wide > .katex { font-size: 0.9em; }
+code { font-size: 0.9em; }
+@page { size: A4; margin: 15mm 13mm; }
+</style>
+<script>
+// After KaTeX renders, shrink any display equation that would collide with its \tag.
+window.addEventListener("load", () => setTimeout(() => {
+  document.querySelectorAll(".katex-display").forEach(d => {
+    if (d.scrollWidth > d.clientWidth + 1) d.classList.add("too-wide");
+  });
+  document.querySelectorAll(".katex-display").forEach(d => {
+    if (d.scrollWidth > d.clientWidth + 1) console.log("OVERFLOW " + d.textContent.slice(0, 60));
+  });
+}, 0));
+</script>

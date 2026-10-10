@@ -12,6 +12,7 @@
 | 11–15 | Part IV — market making & execution | not started | — |
 
 Run all tests: `python -m pytest code/tests -q`
+Build PDFs of the notes: `./build_pdf.sh` (output in `pdf/`).
 
 **Checkpoint:** notes 03–04 done (end of this run's budget) — waiting for user review and balance check.
 **Next step:** note 05 (viscosity solutions), then 06 (Merton, LQ) to finish Part II.

@@ -320,7 +320,7 @@ so $\mathbb E X_T^2=(x+I)^2+\sigma^2\tau$ and $J=-\tfrac12\int a^2-\tfrac12c\big
 *Step 2: optimize $I$.* Setting the derivative to zero, $-I/\tau-c(x+I)=0$, so $I^*=-\dfrac{c\tau x}{1+c\tau}$ and $x+I^*=\dfrac{x}{1+c\tau}$. Then
 $\dfrac{(I^*)^2}{\tau}+c(x+I^*)^2=\dfrac{c^2\tau x^2+cx^2}{(1+c\tau)^2}=\dfrac{cx^2}{1+c\tau}$. Hence
 $$
-v_{\rm OL}(t,x)=-\frac{c\,x^2}{2(1+c\tau)}-\frac12c\sigma^2\tau. \tag{4.4}
+v_{\mathrm{OL}}(t,x)=-\frac{c\,x^2}{2(1+c\tau)}-\frac12c\sigma^2\tau. \tag{4.4}
 $$
 The noise term $-\tfrac12c\sigma^2\tau$ is the full penalty on the accumulated variance: an open-loop schedule cannot react to it at all.
 
@@ -384,7 +384,7 @@ In note 04 (Example 4.1) the HJB equation plus the verification theorem shows th
 
 **Value of feedback.** Comparing (4.4) and (4.11), the $x$-dependent parts coincide; the difference is in the noise term:
 $$
-v-v_{\rm OL}\ \ge\ \tfrac12\sigma^2\big[c\tau-\ln(1+c\tau)\big]>0\quad(c\tau>0). \tag{4.12}
+v-v_{\mathrm{OL}}\ \ge\ \tfrac12\sigma^2\big[c\tau-\ln(1+c\tau)\big]>0\quad(c\tau>0). \tag{4.12}
 $$
 (The inequality $\ln(1+z)<z$ for $z>0$.) For $\sigma=0$ the gap vanishes: without noise there is nothing to react to.
 
