@@ -18,7 +18,14 @@ A self-study repo to **understand stochastic optimal control (HJB, BSDE) and its
 4. **Math in LaTeX** (`$…$`, `$$…$$`). No plain-text formulas.
 5. **Concrete numbers.** Every model gets a worked numerical example; every closed form is checked against a numerical solution in `code/`.
 6. **Bilingual.** English main body; each note ends with a concise `## 中文小结`.
-7. **Concise.** Rigor over length. No filler, no motivational prose.
+7. **Very detailed and readable.** Notes are the opposite of terse: explain *why* each step is taken, not just *what* it is. Readability rules:
+   - Short paragraphs; one idea per paragraph.
+   - Before each derivation, a 1–3 sentence roadmap of where it is going; after it, a 1–2 sentence recap of what was shown.
+   - Number important equations and refer back to them by number.
+   - Use a "Notation" table at the top of each note listing every symbol, its meaning, and its type/units.
+   - Add intuition boxes (`> **Intuition:** …`) after key results, and a small numeric sanity check where possible.
+   - Prefer the 1-d case first, then generalize to $d$ dimensions.
+   - Still no filler or motivational prose: detail means more explanation, not more words.
 8. **Honesty.** If a result is approximate (e.g. Avellaneda–Stoikov small-$q$ expansion), say so and quantify the error. Distinguish textbook models from what electronic market makers actually do.
 
 ## Repo layout
@@ -68,6 +75,16 @@ Each note: `## Setup & definitions` → `## Statement` → `## Derivation` → `
 - Work one note at a time, in roadmap order; a note may only use concepts from earlier notes (or must define them).
 - After writing a derivation, re-check each line; run the matching test before marking the note done.
 - Commit per note.
+
+## Budget & review checkpoints (cloud sessions)
+
+- The user has **$100 of credit** for cloud sessions on this project.
+- **Stop and ask for review** when either (a) the roadmap is complete, or (b) about **$50** has been spent (≈ $50 remaining). Summarize what was done, what is next, and any open questions.
+- Claude **cannot see the credit balance** directly. So:
+  - Treat each Part (I–IV) as a natural checkpoint; at the end of each Part, report progress and ask the user to check the remaining balance before continuing.
+  - If the user reports the balance at any point, record it in `PROGRESS.md` and use it to decide whether to continue.
+  - Prefer finishing a note cleanly over starting a new one when close to a checkpoint.
+- Keep `PROGRESS.md` updated after every note: notes done, tests passing, next step, last reported balance.
 
 ## Core references
 
