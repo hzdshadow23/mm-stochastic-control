@@ -13,3 +13,4 @@ Run all tests: `python -m pytest code/tests -q`
 **Checkpoint:** end of Part I — waiting for user review and balance check.
 **Next step:** note 03 (control problem & dynamic programming principle).
 **Last reported credit balance:** $100 (start; not yet updated).
+**Current run:** Part II on Claude Fable 5.1; stop after ≈ $20 spend (default: after notes 03–04).
