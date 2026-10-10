@@ -80,8 +80,8 @@ Each note: `## Setup & definitions` → `## Statement` → `## Derivation` → `
 
 - The user has **$100 of credit** for cloud sessions on this project.
 - **Current run (from Part II): stop after about $20 of spend** and ask for review. Overall hard stop: roadmap complete, or ≈ $50 remaining. At each stop, summarize what was done, what is next, and any open questions.
-- **Model:** the user wants this work done with **Claude Fable 5.1**, including all code. The session model is chosen by the user in the model picker; Claude cannot switch it itself. If the session is not on Fable, say so before starting work rather than spending credit on another model.
-- Fable is a higher tier than Opus, so per-note cost is likely higher, and the exact cost is unknown to Claude. Default for this run: write notes 03 and 04 (with code and tests), then stop and ask the user to check spend.
+- **Model:** the user wants this work done with **Claude Opus 5.5** in all sessions (decided 2026-10-10; replaces the earlier Fable 5.1 rule). The session model is chosen by the user in the model picker; Claude cannot switch it itself. If the session is not on Opus 5.5, say so before starting work rather than spending credit on another model.
+- The exact per-note cost is unknown to Claude. Default for this run: write notes 03 and 04 (with code and tests), then stop and ask the user to check spend.
 - Claude **cannot see the credit balance** directly. So:
   - Treat each Part (I–IV) as a natural checkpoint; at the end of each Part, report progress and ask the user to check the remaining balance before continuing.
   - If the user reports the balance at any point, record it in `PROGRESS.md` and use it to decide whether to continue.
